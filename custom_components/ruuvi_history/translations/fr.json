@@ -1,0 +1,70 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Synchronisation historique RuuviTag",
+        "description": "Sélectionnez un RuuviTag actuellement à portée d’un adaptateur Bluetooth permettant les connexions.",
+        "data": {
+          "address": "RuuviTag"
+        }
+      },
+      "bluetooth_confirm": {
+        "title": "Ajouter {name} ?",
+        "description": "Ce RuuviTag peut synchroniser son historique interne par Bluetooth."
+      }
+    },
+    "abort": {
+      "already_configured": "Ce RuuviTag est déjà configuré",
+      "no_devices_found": "Aucun RuuviTag compatible et non configuré n’a été trouvé à portée Bluetooth",
+      "not_connectable": "Ce RuuviTag n’est pas accessible par un adaptateur Bluetooth permettant les connexions",
+      "not_supported": "Le format d’annonce de ce RuuviTag n’est pas pris en charge"
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "bluetooth_connection": {
+        "name": "Connexion Bluetooth"
+      }
+    },
+    "button": {
+      "sync_now": {
+        "name": "Synchroniser maintenant"
+      }
+    },
+    "sensor": {
+      "acceleration_total": {
+        "name": "Accélération totale"
+      },
+      "acceleration_x": {
+        "name": "Accélération X"
+      },
+      "acceleration_y": {
+        "name": "Accélération Y"
+      },
+      "acceleration_z": {
+        "name": "Accélération Z"
+      },
+      "battery_voltage": {
+        "name": "Tension de pile"
+      },
+      "humidity": {
+        "name": "Humidité"
+      },
+      "last_sync": {
+        "name": "Dernière synchronisation"
+      },
+      "movement_counter": {
+        "name": "Compteur de mouvement"
+      },
+      "pressure": {
+        "name": "Pression"
+      },
+      "rssi": {
+        "name": "Force du signal"
+      },
+      "temperature": {
+        "name": "Température"
+      }
+    }
+  }
+}
